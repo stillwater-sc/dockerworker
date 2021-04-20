@@ -1,0 +1,42 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - iron_mq > iron_core > request > hawk:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > hawk:
+        patched: '2021-04-20T18:16:56.634Z'
+  'npm:hoek:20180212':
+    - iron_mq > iron_core > request > hawk > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > hawk > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_mq > iron_core > request > hawk > boom > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > hawk > boom > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_mq > iron_core > request > hawk > sntp > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > hawk > sntp > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_mq > iron_core > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-04-20T18:16:56.634Z'
+  'npm:http-signature:20150122':
+    - iron_mq > iron_core > request > http-signature:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > http-signature:
+        patched: '2021-04-20T18:16:56.634Z'
+  'npm:request:20160119':
+    - iron_mq > iron_core > request:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request:
+        patched: '2021-04-20T18:16:56.634Z'
+  'npm:tunnel-agent:20170305':
+    - iron_mq > iron_core > request > tunnel-agent:
+        patched: '2021-04-20T18:16:56.634Z'
+    - iron_worker > iron_core > request > tunnel-agent:
+        patched: '2021-04-20T18:16:56.634Z'
