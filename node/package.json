@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "iron_mq": "*",
-    "iron_worker": ">= 0.1.4"
-  }
+    "iron_worker": ">= 0.1.4",
+    "snyk": "^1.563.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
